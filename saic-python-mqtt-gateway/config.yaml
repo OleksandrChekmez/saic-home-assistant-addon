@@ -3,12 +3,12 @@ arch:
   - amd64
   - armv7
 description: "MQTT-Gateway for SAIC cars like MG5, ZS EV or Marvel R"
-name: "SAIC MQTT Gateway (Python)"
-image: "saicismartapi/saic-python-mqtt-gateway"
-url: "https://github.com/SAIC-iSmart-API/saic-home-assistant-addon"
+name: "SAIC MQTT Gateway (Python) (custom)"
+image: "ghcr.io/oleksandrchekmez/saic-python-mqtt-gateway/saic-mqtt-gateway"
+url: "https://github.com/OleksandrChekmez/saic-home-assistant-addon"
 slug: "saic_python_mqtt_gateway"
 stage: "stable"
-version: "0.12.0"
+version: "0.13.0-oc1"
 legacy: true
 map: 
   - config:rw
@@ -25,6 +25,7 @@ options:
   SAIC_TENANT_ID: "459771"
   SAIC_PHONE_COUNTRY_CODE: ""
   SAIC_USER_TIMEZONE: ""
+  SAIC_IGNORE_STATUS_TIME_DRIFT: "True"
   PUBLISH_RAW_API_DATA_ENABLED: "False"
   ABRP_API_KEY: ""
   ABRP_USER_TOKEN: ""
@@ -57,6 +58,7 @@ schema:
   SAIC_TENANT_ID: str?
   SAIC_PHONE_COUNTRY_CODE: str?
   SAIC_USER_TIMEZONE: str?
+  SAIC_IGNORE_STATUS_TIME_DRIFT: str?
   PUBLISH_RAW_API_DATA_ENABLED: str?
   ABRP_API_KEY: str?
   ABRP_USER_TOKEN: str?

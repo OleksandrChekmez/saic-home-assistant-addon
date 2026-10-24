@@ -8,7 +8,7 @@ image: "ghcr.io/oleksandrchekmez/saic-python-mqtt-gateway/saic-mqtt-gateway"
 url: "https://github.com/OleksandrChekmez/saic-home-assistant-addon"
 slug: "saic_python_mqtt_gateway"
 stage: "stable"
-version: "0.13.0-oc2"
+version: "0.14.0-oc1"
 legacy: true
 map: 
   - config:rw
